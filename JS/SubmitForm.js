@@ -150,7 +150,7 @@ const NewsCheck = document.querySelector('input[name="NewsCheck"]:checked')?.val
   //SET TIMEOUT, after 2 sec go to submission page
   setTimeout(() => {
     SUBMIT_BUTTON.textContent = "Submit";
-    window.location.href = "/HTML/submission.html"
+    window.location.href = "../HTML/submission.html"
   }, 2000);
 
   function ResetButton(){
