@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Us</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/submission.css">
+</head>
+<body class="bg-dark text-white">
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      
+      <!-- Logo -->
+      <a class="logo" href="home.html">
+        <img id="CCA-Logo" src="../Pictures/CCA Logo.png" alt="CCA Logo">
+        <span class="Logo-Title">NYP Esports</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span id="menu-icon">&#9776;</span> 
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="teams.html">Teams</a>
+        <a href="join.html" class="current">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="page-fade" class="fade">
+      <!-- ===================== Thank you Message ===================== -->
+      <div class="Main_Structure">
+        <div class="Submission_Success">
+            <div class="ThankYou_Message">
+              <h1>Thank You for Joining!</h1>
+
+              <div class="Next_Steps">
+                <p>Please check your email to confirm your registration.</p>
+                <p>If you have any questions, feel free to <a id = "contact_us" href="mailto: NYP-Esports@nypccamail.com">contact us</a></p>
+              </div>
+
+              <!-- ===================== Submission Data ===================== -->
+              <div>
+                <p id ="Submission_Data_Header">Submission Data:</p>
+                <p><strong>Name:</strong> <span id="userNameResponse"></span></p>
+                <p><strong>Email:</strong> <span id="userEmailResponse"></span></p>
+                <p><strong>Phone Number:</strong> <span id="userPhoneResponse"></span></p>
+                <p><strong>School:</strong> <span id="userAcademicResponse"></span></p>
+                <p><strong>Course:</strong> <span id="userCourseResponse"></span></p>
+                <p><strong>Platform(s):</strong> <span id="userPlatformResponse"></span></p>
+                <p><strong>Competitive Interest:</strong> <span id="userInterestResponse"></span></p>
+                <p><strong>Receive emails from NYP Esports:</strong> <span id="userNewsCheckResponse"></span></p>
+              </div>
+
+              <!-- ===================== Back to Home Button ===================== -->
+              <div class="ReturnHome">
+                  <a href="home.html" class="ReturnHome_Button">Return to Homepage</a>
+              </div>
+
+            </div>
+          </div>
+      </div>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer>
+    <div class="container">
+
+      <!-- Social Media Icons -->
+      <div class="footer-socials">
+        <a href="https://discord.com" target="_blank" class="social-icon">
+          <img src="../Pictures/discordicon.svg" alt="Discord" />
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+          <img src="../Pictures/instagramicon.svg" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-icon">
+          <img src="../Pictures/youtubeicon.svg" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Footer Text -->
+    <div class="container">
+      <a class="footer-title">
+        <p>2025 NYP Esports</p>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================== Scripts ===================== -->
+  <script src="../JS/MobileNavbar.js"></script>
+  <script src="../JS/PageTransition.js"></script>
+  <script src="../JS/RespongePage.js"></script>
+
+</body>
+</html>

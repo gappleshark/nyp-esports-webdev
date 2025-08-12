@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/events.css">
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      
+      <!-- Logo -->
+      <a class="logo" href="home.html">
+        <img id="CCA-Logo" src="../Pictures/CCA Logo.png" alt="CCA Logo">
+        <span class="Logo-Title">NYP Esports</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span id="menu-icon">&#9776;</span> 
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="events.html" class ="current">Events</a>
+        <a href="teams.html">Teams</a>
+        <a href="join.html">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="page-fade" class="fade">
+
+    <!-- ===================== Events Page Header ===================== -->
+    <section class="events-header py-5" id ="events-header">
+      <div class="container">
+        <h2 class="text-center display-3 fw-bold text-uppercase">Events Hub</h2>
+        <p class="text-center fs-2"><strong>The battlefield awaits. Browse our lineup of showdowns, scrims, and exclusive gaming nights.</strong></p>
+        <p class="text-center fs-5">All events displayed in this section are upcoming initiatives scheduled for AY25/26.</p>
+        <p class="text-center fs-5">Click on any event card for more information. <a href="#past-events-section" class="past-button">View Past Events</a></p>
+      </section>
+
+    <!-- ===================== Event Cards ===================== -->
+    <section class="new-events">
+      <div class="event-list">
+
+        <!-- Event 1 -->
+        <button class="custom-event-card" data-bs-toggle="modal" data-bs-target="#event1Modal">
+          <div class="event-content">
+            <div class="event-text">
+              <h4 class="event-title">League of Legends Summer Duels</h4>
+              <p class="event-date">July 26, 2025</p>
+              <p class="event-time">7:00 PM - 10:00 PM  // NYP Esports Club Room South, Block P1, Level 2</p>
+            </div>
+            <img src="../Pictures/Event1.webp" class="event-thumb" alt="League of Legends Summer Duels">
+          </div>
+        </button>
+
+        <!-- Event 2 -->
+        <button class="custom-event-card" data-bs-toggle="modal" data-bs-target="#event2Modal">
+          <div class="event-content">
+            <div class="event-text">
+              <h4 class="event-title">Smash Bros Mini Cup</h4>
+              <p class="event-date">August 28, 2025</p>
+              <p class="event-time">2:00 PM - 6:00 PM / NYP Esports Club Room North, Block D, Level 3</p>
+            </div>
+            <img src="../Pictures/Event2.jpg" class="event-thumb" alt="Smash Bros Mini Cup">
+          </div>
+        </button>
+
+      
+        <!-- Event 3 -->
+        <button class="custom-event-card" data-bs-toggle="modal" data-bs-target="#event3Modal">
+          <div class="event-content">
+            <div class="event-text">
+              <h4 class="event-title">Valorant Duo Trials 2.0</h4>
+              <p class="event-date">September 14, 2025</p>
+              <p class="event-time">6:00 PM - 9:30 PM / NYP Esports Club Room South, Block P1, Level 2</p>
+            </div>
+            <img src="../Pictures/Event3.webp" class="event-thumb" alt="Valorant Duo Trials 2.0">
+          </div>
+        </button>
+
+        <!-- Event 4 -->
+        <button class="custom-event-card" data-bs-toggle="modal" data-bs-target="#event4Modal">
+          <div class="event-content">
+            <div class="event-text">
+              <h4 class="event-title">Mobile Legends Mini-Cup: Fall Edition</h4>
+              <p class="event-date">October 19, 2025</p>
+              <p class="event-time">3:00 PM - 7:00 PM / NYP Esports Club Room North, Block D, Level 3</p>
+            </div>
+            <img src="../Pictures/Event4.webp" class="event-thumb" alt="Mobile Legends Mini-Cup">
+          </div>
+        </button>
+
+        <!-- Event 5 -->
+        <button class="custom-event-card" data-bs-toggle="modal" data-bs-target="#event5Modal">
+          <div class="event-content">
+            <div class="event-text">
+              <h4 class="event-title">Community LAN Night</h4>
+              <p class="event-date">November 8, 2025</p>
+              <p class="event-time">5:00 PM - 10:00 PM / NYP Esports Club Room Central, Block B, Level 1</p>
+            </div>
+            <img src="../Pictures/Event5.webp" class="event-thumb" alt="Community LAN Night">
+          </div>
+        </button>
+
+
+      </div>
+
+    </section>
+
+    <!-- ===================== Event Card Modals ===================== -->
+
+    <!-- Event 1 Modal -->
+    <div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="event1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="event1Label">League of Legends Summer Duels</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><em>Join us this coming Friday for our annual LoL 1v1 Summer Showdown! Whether you're a seasoned pro or a newcomer, this event is your chance to showcase your skills and claim victory!</em></p>
+            <img src="../Pictures/Event1.webp" class="img-fluid rounded mb-3" id="modal-image" alt="League of Legends Summer Duels">
+            <p><strong>Date:</strong> July 26, 2025</p>
+            <p><strong>Time:</strong> 7:00 PM - 10:00 PM</p>
+            <p><strong>Location:</strong> NYP Esports Club Room South, Block P1, Level 2 </p>
+            <p><strong>Format:</strong> 1v1 Tournament</p>
+            <p><strong>Prizes:</strong> LoL Merch, Logitech Peripherals, and Grab vouchers!</p>
+            <p><strong>Open to:</strong> All NYP students</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 2 Modal -->
+    <div class="modal fade" id="event2Modal" tabindex="-1" aria-labelledby="event2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="event1Label">Smash Bros Mini Cup</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><em>What's up, Nintendo gamers ! Our Smash Bros Mini Cup is in 1 month! Battle it out in fast-paced 1v1v1v1 clashes as your favourite Smash characters to win exciting prizes!</em></p>
+            <img src="../Pictures/Event2.jpg" class="img-fluid rounded mb-3" id="modal-image" alt="Smash Bros Mini Cup">
+            <p><strong>Date:</strong> August 28, 2025</p>
+            <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+            <p><strong>Location:</strong> NYP Esports Club Room North, Block D, Level 3</p>
+            <p><strong>Format:</strong> 1v1v1v1 Tournament</p>
+            <p><strong>Prizes:</strong> Nintendo eShop gift cards, exclusive merchandise, and more!</p>
+            <p><strong>Open to:</strong> All NYP students</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 3 Modal -->
+    <div class="modal fade" id="event3Modal" tabindex="-1" aria-labelledby="event3Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="event3Label">Valorant Duo Trials 2.0</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><em>Back by popular demand! Partner up with a fellow agent and climb the bracket together. Show us your synergy in the second edition of Duo Trials.</em></p>
+            <img src="../Pictures/Event3.webp" class="img-fluid rounded mb-3" id="modal-image" alt="Valorant Duo Trials">
+            <p><strong>Date:</strong> September 14, 2025</p>
+            <p><strong>Time:</strong> 6:00 PM - 9:30 PM</p>
+            <p><strong>Location:</strong> NYP Esports Club Room South, Block P1, Level 2</p>
+            <p><strong>Format:</strong> 2v2 Elimination</p>
+            <p><strong>Prizes:</strong> Valorant Points, Riot Swag, Discord Nitro</p>
+            <p><strong>Open to:</strong> NYP Esports Members</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 4 Modal -->
+    <div class="modal fade" id="event4Modal" tabindex="-1" aria-labelledby="event4Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="event4Label">Mobile Legends Mini-Cup: Fall Edition</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><em>Ready to dominate the battlefield? Assemble your squad and join our fall-themed MLBB mini tournament — teamplay and strategy take center stage!</em></p>
+            <img src="../Pictures/Event4.webp" class="img-fluid rounded mb-3" id="modal-image" alt="Mobile Legends Fall Cup">
+            <p><strong>Date:</strong> October 19, 2025</p>
+            <p><strong>Time:</strong> 3:00 PM - 7:00 PM</p>
+            <p><strong>Location:</strong> NYP Esports Club Room North, Block D, Level 3</p>
+            <p><strong>Format:</strong> 5v5 Double Elimination</p>
+            <p><strong>Prizes:</strong> MLBB Diamonds, Merch, Pizza Party</p>
+            <p><strong>Open to:</strong> All NYP students</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 5 Modal -->
+    <div class="modal fade" id="event5Modal" tabindex="-1" aria-labelledby="event5Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="event5Label">Community LAN Night</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><em>Whether you're a casual or a hardcore gamer, LAN Night is all about good vibes, laughter, and gaming fun. Bring your laptop or hop on a provided station and chill with the community.</em></p>
+            <img src="../Pictures/Event5.webp" class="img-fluid rounded mb-3" id="modal-image" alt="Community LAN Night">
+            <p><strong>Date:</strong> November 8, 2025</p>
+            <p><strong>Time:</strong> 5:00 PM - 10:00 PM</p>
+            <p><strong>Location:</strong> NYP Esports Club Room Central, Block B, Level 1</p>
+            <p><strong>Format:</strong> Open LAN — Multiplayer Games, Mini Challenges, Chill Zones</p>
+            <p><strong>Prizes:</strong> Mystery Raffles & Club Merchandise</p>
+            <p><strong>Open to:</strong> NYP Esports Members</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ===================== Past Events Section ===================== -->
+    <!-- Back to Upcoming Events Button -->
+    <section class="past-events-section py-5 bg-black text-white" id ="past-events-section">
+      <div class="sticky-wrapper mb-5">
+        <a href="#events-header" class="upcoming-button">Back to Upcoming Events</a>
+      </div>
+      
+      <div class="container">
+        <h3 id ="past-events-title" class="text-center fw-bold mb-2 text-uppercase">Past Events</h3>
+        <p id ="past-events-subtitle" class="text-center text-muted mb-4">A look back at some of our favorite battles and community moments.</p>
+
+        <!-- Year Navigation Buttons -->
+        <div class="text-center mb-5">
+          <a href="#events-2025" class="year-button">2025</a>
+          <a href="#events-2024" class="year-button">2024</a>
+          <a href="#events-2023" class="year-button">2023</a>
+          <a href="#events-2022" class="year-button">2022</a>
+        </div>
+      
+        <!-- 2025 Events -->
+        <h4 id="events-2025" class="fw-bold text-uppercase mt-5 mb-3">2025</h4>
+        <div class="table-responsive mb-4">
+          <table class="table table-hover table-borderless past-events-table text-center align-middle">
+            <thead class="table-light text-dark small text-uppercase">
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Winners</th>
+                <th>Highlights</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mobile Legends Mini-Cup</td>
+                <td>May 12, 2025</td>
+                <td>Team Event</td>
+                <td>Marcus Teo</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>League Clash Night</td>
+                <td>Apr 20, 2025</td>
+                <td>Team Event</td>
+                <td>Team Hexcore</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>Community LAN 2025</td>
+                <td>Mar 15, 2025</td>
+                <td>Mixed Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 2024 Events -->
+        <h4 id="events-2024" class="fw-bold text-uppercase mt-5 mb-3">2024</h4>
+        <div class="table-responsive mb-4">
+          <table class="table table-hover table-borderless past-events-table text-center align-middle">
+            <thead class="table-light text-dark small text-uppercase">
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Winners</th>
+                <th>Highlights</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Christmas LAN Party</td>
+                <td>Dec 23, 2024</td>
+                <td>Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+              <tr>
+                <td>League Cup Singapore</td>
+                <td>Nov 16, 2024</td>
+                <td>Team Event</td>
+                <td>Team Ignis (1st Place)</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>50 Player Among Us Party</td>
+                <td>Sep 6, 2024</td>
+                <td>Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+              <tr>
+                <td>Mobile Legends Mini-Cup</td>
+                <td>May 6, 2024</td>
+                <td>Team Event</td>
+                <td>Team Eclipse</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>League Clash Night</td>
+                <td>Apr 14, 2024</td>
+                <td>Team Event</td>
+                <td>Team Ignis</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>Casual LAN Party</td>
+                <td>Mar 9, 2024</td>
+                <td>Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+              <tr>
+                <td>Valorant Duo Trials</td>
+                <td>Feb 17, 2024</td>
+                <td>Duo Event</td>
+                <td>Alex & Sean</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>Community LAN 2024</td>
+                <td>Jan 20, 2024</td>
+                <td>Mixed Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 2023 Events -->
+        <h4 id="events-2023" class="fw-bold text-uppercase mt-5 mb-3">2023</h4>
+        <div class="table-responsive mb-4">
+          <table class="table table-hover table-borderless past-events-table text-center align-middle">
+            <thead class="table-light text-dark small text-uppercase">
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Winners</th>
+                <th>Highlights</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Smash Bros Duel Fest</td>
+                <td>Dec 9, 2023</td>
+                <td>Solo Event</td>
+                <td>Brandon Lee</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>Valorant Summer Showdown</td>
+                <td>Jul 15, 2023</td>
+                <td>Team Event</td>
+                <td>Team Aurora</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+              <tr>
+                <td>Community Game Night</td>
+                <td>May 5, 2023</td>
+                <td>Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+              <tr>
+                <td>League Clash Night</td>
+                <td>Apr 8, 2023</td>
+                <td>Team Event</td>
+                <td>Team Catalyst</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+     
+
+        <!-- 2022 Events -->
+        <h4 id="events-2022" class="fw-bold text-uppercase mt-5 mb-3">2022</h4>
+        <div class="table-responsive mb-4">
+          <table class="table table-hover table-borderless past-events-table text-center align-middle">
+            <thead class="table-light text-dark small text-uppercase">
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Winners</th>
+                <th>Highlights</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Founders' LAN Night</td>
+                <td>Nov 12, 2022</td>
+                <td>Mixed Casual</td>
+                <td>-</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Event Recap</a></td>
+              </tr>
+              <tr>
+                <td>Valorant Beta Cup</td>
+                <td>Oct 8, 2022</td>
+                <td>Team Event</td>
+                <td>Team Nyphoria</td>
+                <td><a href="https://youtube.com" class="highlight-link" target="_blank">Full VOD</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+        
+    </section>
+
+    <!-- ===================== Past Events Image ===================== -->
+    <div class ="past-events-image">
+      <img src ="../Pictures/PastEventsImage2.webp">
+    </div>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer>
+    <div class="container">
+
+      <!-- Social Media Icons -->
+      <div class="footer-socials">
+        <a href="https://discord.com" target="_blank" class="social-icon">
+          <img src="../Pictures/discordicon.svg" alt="Discord" />
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+          <img src="../Pictures/instagramicon.svg" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-icon">
+          <img src="../Pictures/youtubeicon.svg" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Footer Text -->
+    <div class="container">
+      <a class="footer-title">
+        <p>2025 NYP Esports</p>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================== Scripts ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="../JS/MobileNavbar.js"></script>
+  <script src="../JS/PageTransition.js"></script>
+
+</body>
+</html>

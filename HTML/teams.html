@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teams</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/teams.css">
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      
+      <!-- Logo -->
+      <a class="logo" href="home.html">
+        <img id="CCA-Logo" src="../Pictures/CCA Logo.png" alt="CCA Logo">
+        <span class="Logo-Title">NYP Esports</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span id="menu-icon">&#9776;</span> 
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="teams.html" class="current">Teams</a>
+        <a href="join.html">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="page-fade" class="fade">
+
+    <!-- ===================== Teams Page Header with Game Selectors ===================== -->
+    <h2 class="Teams_Title" id="Teams_Title">Our Competitive Teams</h2>
+    <p class="text-center black-text">Click on any of the game icons for our corresponding competitive team information.</p>
+
+    <div class="Team_Show">
+        <img src="../Pictures/LoL Selector.png" alt="LOL" onclick="selectGame('LeagueOfLegends')" class="Game_Selector"/>
+        <img src="../Pictures/Val Selector.png" alt="VALORANT" onclick="selectGame('Valorant')" class="Game_Selector" />
+        <img src="../Pictures/ML SelectorV2.png" alt="MobileLegends" onclick="selectGame('MobileLegends')" class="Game_Selector" />
+    </div>
+
+    <!-- ===================== Back to Top Button ===================== -->
+    <div class="sticky-wrapper mb-5">
+      <a href="#Teams_Title" class="Back_to_TOPBUTTON">Back to top</a>
+    </div>
+
+      <section class="Team_MainDisplay" id="Team_LOL">
+       <!-- ===================== LEAGUE OF LEGENDS ===================== -->
+        <h1 class="Game_Name" id="Game_Name">LEAGUE OF LEGENDS</h1>
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">HEAD COACHES</h2>
+          <div class="Member_Main">
+            <!-- Head Coaches -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Coach_Head1.png" alt="Coach1" />
+                <p class="Member_Name">kk0ma</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Coach_Head2.png" alt="Coach2" />  
+                <p class="Member_Name">RATHER</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">DRAFT COACHES</h2>
+          <div class="Member_Main">
+            <!-- Draft Coaches -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Coach1.png" alt="Coach1" />
+                <p class="Member_Name">TOM</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Coach2.png" alt="Coach2" />
+                <p class="Member_Name">MATA</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Coach3.png" alt="Coach3" />
+                <p class="Member_Name">DOOTI</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">TOP LANE</h2>
+          <div class="Member_Main">
+            <!-- Top Lane -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Fighter1.png" alt="TopLane1" />
+                <p class="Member_Name">DORAN</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Fighter2.png" alt="TopLane2" />
+                <p class="Member_Name">HAETAE</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">JUNGLE</h2>
+          <div class="Member_Main">
+            <!-- Jungle -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Jungle1.png" alt="Jungle1" />
+                <p class="Member_Name">ONER</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Jungle2.png" alt="Jungle2" />
+                <p class="Member_Name">VINCENZO</p>
+              </div>
+            </div> 
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">MID LANE</h2>
+          <div class="Member_Main">
+            <!-- Mid Lane -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/MidLane1.png" alt="MidLane1" />
+                <p class="Member_Name">FAKER</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/MidLane2.png" alt="MidLane2" />
+                <p class="Member_Name">POBY</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/MidLane3.png" alt="MidLane3" />
+                <p class="Member_Name">GUTI</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">BOTTOM LANE</h2>
+          <div class="Member_Main">
+            <!-- Bottom Lane -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/BotLane1.png" alt="BotLane1" />
+                <p class="Member_Name">GUMAYUSI</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/BotLane2.png" alt="BotLane2" />
+                <p class="Member_Name">SMASH</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/BotLane3.png" alt="BotLane3" />
+                <p class="Member_Name">CYPHER</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">SUPPORT</h2>
+          <div class="Member_Main">
+            <!-- Support -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Support1.png" alt="Support1" />
+                <p class="Member_Name">KERIA</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/LeagueOfLegends/Support2.png" alt="Support2" />
+                <p class="Member_Name">CLOUD</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="Team_MainDisplay" id="Team_VT">
+      <!-- ===================== VALORANT ===================== -->
+        <h1 class="Game_Name" id="Game_Name">VALORANT</h1>
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">DUELISTS</h2>
+          <div class="Member_Main">
+            <!-- Duelists -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/God1.png" alt="Aspas" />
+                <p class="Member_Name">Aspas</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/God2.png" alt="Zekken" />  
+                <p class="Member_Name">Zekken</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/SecTOP1.png" alt="t3xture" />  
+                <p class="Member_Name">t3xture</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">CONTROLLERS</h2>
+          <div class="Member_Main">
+            <!-- Duelists -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/TOP3.png" alt="Jawgemo" />  
+                <p class="Member_Name">Jawgemo</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/SecTOP3.png" alt="BuZz" />
+                <p class="Member_Name">BuZz</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">INITIATORS</h2>
+          <div class="Member_Main">
+            <!-- Initiators -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/TOP2.png" alt="Trent" />
+                <p class="Member_Name">Trent</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/MID4.png" alt="stax" />
+                <p class="Member_Name">stax</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/SecTOP4.png" alt="Munchkin" />
+                <p class="Member_Name">Munchkin</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">SENTINELS</h2>
+          <div class="Member_Main">
+            <!-- Sentinels -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/TOP1.png" alt="Karon" />
+                <p class="Member_Name">Karon</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/SecTOP2.png" alt="Jemkin" />
+                <p class="Member_Name">Jemkin</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Team_Introduction">
+          <h2 class="Member_Role">FLEX</h2>
+          <div class="Member_Main">
+            <!-- Flex -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant//MID.png" alt="Foxy9" />
+                <p class="Member_Name">Foxy9</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/MID1.png" alt="yoman" />
+                <p class="Member_Name">yoman</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/MID2.png" alt="iZu" />
+                <p class="Member_Name">iZu</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/Valorant/MID3.png" alt="Sylvan" />
+                <p class="Member_Name">Sylvan</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="Team_MainDisplay" id="Team_ML">
+      <!-- ===================== MOBILE LEGENDS ===================== -->
+        <h1 class="Game_Name" id="Game_Name">MOBILE LEGENDS</h1>
+        <section  class="Team_Introduction">
+          <h2 class="Member_Role">CAPTAIN</h2>
+          <div class="Member_Main">
+            <!-- Captain -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/Captain.png" alt="Captain" />
+                <p class="Member_Name">PoWerFuL</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section  class="Team_Introduction">
+          <h2 class="Member_Role">EXP LANE</h2>
+          <div class="Member_Main">
+            <!-- Exp Lane -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/ExpLane.png" alt="ExpLane" />
+                <p class="Member_Name">Kennn</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/ExpLane2.png" alt="ExpLane" />
+                <p class="Member_Name">Dominic</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section  class="Team_Introduction">
+          <h2 class="Member_Role">JUNGLE</h2>
+          <div class="Member_Main">
+            <!-- Jungle -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/Jungler.png" alt="Jungler" />
+                <p class="Member_Name">Boyet</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/MidLane.png" alt="Jungler" />  
+                <p class="Member_Name">Seilah</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section  class="Team_Introduction">
+          <h2 class="Member_Role">MID LANE</h2>
+          <div class="Member_Main">
+            <!-- Mid Lane -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/MidLane1.png" alt="MidLane" />
+                <p class="Member_Name">A1bert</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/MidLane2.png" alt="MidLane" />  
+                <p class="Member_Name">keewee</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/MidLane3.png" alt="MidLane" />  
+                <p class="Member_Name">Potato</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section  class="Team_Introduction">
+          <h2 class="Member_Role">GOLD LANE</h2>
+          <div class="Member_Main">
+            <!-- Gold Lane -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/GoldLane.png" alt="GoldLane" />
+                <p class="Member_Name">Markyyy</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/GoldLane2.png" alt="GoldLane" />  
+                <p class="Member_Name">Coconut</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/GoldLane3.png" alt="GoldLane" />  
+                <p class="Member_Name">FMM</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section  class="Team_Introduction">
+          <h2 class="Member_Role">ROAMER</h2>
+          <div class="Member_Main">
+            <!-- Roamer -->
+            <div class="Member_Arrange_to_ROW">
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/Roamer.png" alt="Roamer" />
+                <p class="Member_Name">carrot</p>
+              </div>
+              <div class="Member_Card">
+                <img src="../Pictures/MobileLegends/Roamer2.png" alt="Roamer" />  
+                <p class="Member_Name">Jayy</p>
+              </div>
+            </div>
+          </div>
+        </section>  
+
+      </section>
+
+  </main>
+
+<!-- ===================== Footer ===================== -->
+<footer>
+  <div class="container">
+
+    <!-- Social Media Icons -->
+    <div class="footer-socials">
+      <a href="https://discord.com" target="_blank" class="social-icon">
+        <img src="../Pictures/discordicon.svg" alt="Discord" />
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">
+        <img src="../Pictures/instagramicon.svg" alt="Instagram" />
+      </a>
+      <a href="https://youtube.com" target="_blank" class="social-icon">
+        <img src="../Pictures/youtubeicon.svg" alt="YouTube" />
+      </a>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Footer Text -->
+  <div class="container">
+    <a class="footer-title">
+      <p>2025 NYP Esports</p>
+    </a>
+  </div>
+</footer>
+
+
+
+  <!-- ===================== Scripts ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="../JS/MobileNavbar.js"></script>
+  <script src="../JS/PageTransition.js"></script>
+  <script src="../JS/TeamSwitchPage.js"></script>
+
+</body>
+</html>

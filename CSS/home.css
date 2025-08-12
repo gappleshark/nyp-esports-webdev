@@ -1,0 +1,326 @@
+
+/* ===================== Welcome Section ===================== */
+.welcome-section {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ===================== Background Video ===================== */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+  pointer-events: none;
+}
+
+/* ===================== Dark Overlay ===================== */
+.welcome-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: 1;
+}
+
+/* ===================== Welcome Section Content ===================== */
+.welcome-content {
+  z-index: 2;
+  color: #ffffff;
+}
+
+.welcome-title {
+  font-size: 64px; 
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+  font-size: 22.5px; 
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* ===================== Welcome Section About Us Button ===================== */
+.welcome-button {
+  display: inline-block;
+  padding: 8px 16px; 
+  font-size: 24px;  
+  font-weight: bold;
+  color: rgb(2, 154, 255);
+  background-color: transparent;
+  border: 2px solid rgb(2, 154, 255);
+  border-radius: 6px; 
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, 
+              background-color 0.15s ease-in-out, 
+              border-color 0.15s ease-in-out, 
+              box-shadow 0.15s ease-in-out;
+}
+
+.welcome-button:hover {
+  color: #ffffff;
+  background-color: rgb(2, 154, 255);
+  border-color: rgb(2, 154, 255);
+}
+
+/* ===================== Upcoming Events Section ===================== */
+.event-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  background:
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(135deg, rgb(236, 232, 225), rgb(220, 215, 210));
+  background-size: auto, cover;
+  
+}
+
+.event-section .event-header {
+  text-align: center;
+  font-size: 40px;  
+  font-weight: 700;
+  margin-top: -90px;
+}
+
+.event-section .event-header2 {
+  text-align: center;
+  font-size: 40px;  
+  font-weight: 1000;
+  margin-top: -55px;
+  margin-bottom: 50px;
+}
+
+.event-section .about-text {
+  color: #000000;
+}
+
+.event-carousel-content {
+  padding: 135px 20px;
+  color: #000000;
+}
+
+/* ===================== Bootstrap Carousel ===================== */
+.carousel-indicators button {
+  height: 3px;
+  width: 40px;
+}
+
+.carousel-indicators .active {
+  background-color: #6f6f74; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 110px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 60px; 
+  height: 60px;
+  background-size: 100px 100px; 
+  filter: invert(40%) sepia(10%) saturate(300%) hue-rotate(160deg) brightness(80%) contrast(80%);
+}
+
+/* ===================== About Section Shared Layout ===================== */
+.about-section {
+  padding: 115px 20px;
+}
+
+.about-section2 {
+  padding: 115px 20px;
+}
+
+.section-title {
+  font-size: 42px; 
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.member-perks-list {
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.member-perks-list li {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  color: #ffffff;
+}
+
+.about-section2 .about-text {
+  color: #000000;
+}
+
+.about-image {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.responsive-img {
+  width: 100%;
+  max-width: 480px;
+  transform: scale(1.25); 
+  transform-origin: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ===================== Image Positioning Adjustments ===================== */
+.about-container:not(.reverse) .responsive-img {
+  transform: scale(1.25) translateX(10%);
+}
+
+.about-container.reverse .responsive-img {
+  transform: scale(1.25) translateX(-10%);
+}
+
+/* ===================== Text Alignment with Shifted Images ===================== */
+.about-container:not(.reverse) .about-text {
+  transform: translateX(-10%);
+}
+
+.about-container.reverse .about-text {
+  transform: translateX(10%);
+}
+
+/* ===================== Backgrounds for About Sections ===================== */
+.about-section {
+  background: 
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(135deg, #040025, #000000);
+  background-size: auto, cover;
+}
+
+.about-section2 {
+  background:
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(135deg, rgb(236, 232, 225), rgb(220, 215, 210));
+  background-size: auto, cover;
+}
+
+/* ===================== Responsive Layout ===================== */
+@media (max-width: 768px) {
+
+  /* ===================== Responsive Event Section Header ===================== */
+  .event-section .section-title {
+    text-align: center;
+    font-size: 32px; 
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 60px;
+    margin-top: -85px;
+  }
+
+  .event-section .section-title2 {
+    text-align: center;
+    font-size: 48px; 
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: -10px;
+  }
+
+  /* ===================== Responsive Carousel Controls ===================== */
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: auto;
+    bottom: auto;
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+
+  .carousel-control-prev {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    width: 50px;
+    height: 40px;
+    transform: none;
+  }
+
+  .carousel-control-next {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    width: 50px;
+    height: 40px;
+    transform: none;
+  }
+
+  /* ===================== Responsive About Section Layout ===================== */
+  .about-container,
+  .about-container.reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-text,
+  .about-image {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .about-text {
+    transform: none !important;
+    padding: 0 20px;
+  }
+
+  /* ===================== Responsive Image Properties ===================== */
+  .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .responsive-img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 200px;
+    border-radius: 16px;
+    transform: none !important;
+  }
+}

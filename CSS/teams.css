@@ -1,0 +1,187 @@
+/* ===================== Teams Page Title ===================== */
+.Teams_Title {
+  color: #000000;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.black-text{
+  color: #000000;
+  font-size: 20px;
+}
+
+/* ===================== Game Selector Images ===================== */
+.Team_Show {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.Team_Show img {
+  height: auto;
+  max-width: 25%;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.Team_Show img:hover {
+  border: 1.5px solid rgb(2, 154, 255);
+  transform: scale(1.02);
+  transition: transform 0.5s;
+}
+
+/* ===================== Background for Game Selectors ===================== */
+body {
+  background:
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(135deg, rgb(236, 232, 225), rgb(220, 215, 210));
+  background-size: auto, cover;
+}
+
+/* ===================== Headings ===================== */
+h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* ===================== Team Introduction Section ===================== */
+.Team_Introduction {
+  padding: 30px;
+  text-align: center;
+}
+
+/* ===================== Game Name Banner ===================== */
+.Game_Name {
+  font-family: 'IMPACT', sans-serif;
+  font-size: 90px;
+  color: rgb(2, 154, 255);
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  width: 100%;
+  height: 170px;
+  margin-top: 50px;
+}
+
+/* ===================== Member Display Layout ===================== */
+.Member_Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Member_Arrange_to_ROW {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ===================== Member Card Styling ===================== */
+.Member_Card {
+  background: #1a1a1a;
+  border: 2px solid rgb(2, 154, 255);
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.2s ease-in-out; 
+  /* hover animation */
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.9);
+}
+
+.Member_Card:hover {
+  transform: translateY(-5px);
+}
+
+.Member_Card img {
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* ===================== Member Text ===================== */
+.Member_Role {
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.Member_Name {
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+/* ===================== Default Display Configuration ===================== */
+#Team_LOL {
+  display: block;
+}
+
+/* ===================== Background for Teams ===================== */
+.Team_MainDisplay {
+  display: none;
+  background: 
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(#040025, #000000);
+  background-size: auto, cover;
+  z-index: 1;
+  /* ensure mainpage is infront */
+}
+
+/* ===================== Back to Top Button ===================== */
+.sticky-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0px;
+  top: 90px; 
+  z-index: 1050;
+  padding-right: 20px;
+  margin-top: 5px;
+}
+
+.Back_to_TOPBUTTON {
+  display: inline-block;
+  padding: 2px 16px; 
+  font-size: 18px;  
+  font-weight: bold; 
+  color: #ffffff;
+  background-color: rgb(2, 154, 255);
+  border-radius: 6px; 
+  text-decoration: none;            
+}
+
+.Back_to_TOPBUTTON:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* ===================== Responsive Styles ===================== */
+@media(max-width: 768px) {
+  .Game_Name {
+    font-size: 70px;
+    width: 100%;
+    height: 150px;
+  }
+
+  .Team_Show img {
+    max-width: 120px;
+    height: 60px;
+   }  
+
+  .Member_Arrange_to_ROW {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Member_Card {
+    max-width: 200px;
+  }
+
+  .Back_to_TOPBUTTON {
+    font-size: 15px;  
+  }
+}

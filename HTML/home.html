@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      
+      <!-- Logo -->
+      <a class="logo" href="home.html">
+        <img id="CCA-Logo" src="../Pictures/CCA Logo.png" alt="CCA Logo">
+        <span class="Logo-Title">NYP Esports</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span id="menu-icon">&#9776;</span> 
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="home.html" class="current">Home</a>
+        <a href="events.html">Events</a>
+        <a href="teams.html">Teams</a>
+        <a href="join.html">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="page-fade" class="fade">
+
+    <!-- ===================== Welcome Section ===================== -->
+    <header class="welcome-section">
+      <video class="background-video" src="../Videos/HomeVideo.mp4" autoplay muted loop></video>
+      <div class="welcome-overlay"></div>
+      <div class="container welcome-content">
+        <h1 class="welcome-title">Welcome to NYP Esports</h1>
+        <p class="welcome-subtitle">Take your gaming journey to new heights.</p>
+        <a href="#our-history" class="welcome-button">About Us</a>
+      </div>
+    </header>
+
+    <!-- ===================== Events Carousel Section ===================== -->
+    <section class="event-section">
+      <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12000"> 
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+
+          <!-- ===== Slide 1: League of Legends Event ===== -->
+          <section class="event-carousel-content carousel-item active">
+            <h2 class="event-header">Upcoming Events</h2>
+            <p class="event-header2">___________________</p>
+            <div class="about-container reverse">
+              <div class="about-text">
+                <h2 class="Event_Title"><strong>League of Legends Summer Duels</strong></h2>
+                <p>Join us this coming <strong>Friday</strong> for our annual LoL <strong>1v1</strong> Summer Showdown! Whether you're a seasoned pro or a newcomer, this event is your chance to showcase your skills and claim victory!</p>
+                <p><strong>Date:</strong> July 26, 2025</p>
+                <p><strong>Time:</strong> 7:00 PM - 10:00 PM</p>
+                <p><strong>Venue:</strong> NYP Esports Club Room South, Block P1, Level 2</p>
+                <p><strong>Prizes:</strong> LoL Merch, Logitech Peripherals, and Grab vouchers!</p>
+              </div>
+              <div class="about-image">
+                <img src="../Pictures/Event1.webp" alt="League of Legends 1v1 Duels Image" class="responsive-img" />
+              </div>
+            </div>
+          </section>
+
+          <!-- ===== Slide 2: Smash Bros Event ===== -->
+          <section class="event-carousel-content carousel-item">
+            <h2 class="event-header">Upcoming Events</h2>
+            <p class="event-header2">___________________</p>
+            <div class="about-container reverse">
+              <div class="about-text">
+                <h2 class="Event_Title"><strong>Smash Bros Mini Cup</strong></h2>
+                <p><strong>What's up, <em>Nintendo gamers</em> !</strong> Our Smash Bros Mini Cup is in <strong>1 month!</strong> Battle it out in fast-paced <strong>1v1v1v1</strong> clashes as your favourite <strong>Smash</strong> characters to win exciting prizes!</p>
+                <p><strong>Date:</strong> August 28, 2025</p>
+                <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+                <p><strong>Venue:</strong> NYP Esports Club Room North, Block D, Level 3</p>
+                <p><strong>Prizes:</strong> Nintendo eShop gift cards, exclusive merchandise, and more!</p>
+              </div>
+              <div class="about-image">
+                <img src="../Pictures/Event2.jpg" alt="Smash Bros Mini Cup Image" class="responsive-img" />
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================== Our History Section ===================== -->
+    <section id="our-history" class="about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <h2 class="section-title">Our History</h2>
+          <p>NYP Esports was founded in <strong>2022</strong> by a group of passionate students who saw the potential for <strong>gaming</strong> to go beyond the screen — as a way to bring people together and foster a <strong>shared identity</strong>.</p>
+          <p>Over the years, we've built a culture that values <strong>passion</strong>, <strong>inclusivity</strong>, and <strong>creativity</strong> — shaping NYP Esports into a hub where <strong>gamers</strong> can <strong>belong</strong>, <strong>lead</strong>, and <strong>level up</strong> together.</p>
+        </div>
+        <div class="about-image">
+          <img src="../Pictures/AboutUs.jpg" alt="About Us" class="responsive-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== What We Offer Section ===================== -->
+    <section id="what-we-offer" class="about-section2">
+      <div class="about-container reverse">
+        <div class="about-text">
+          <h2 class="section-title">What We Offer</h2>
+          <p class="about-text-description">
+            Whether you're here to unwind or compete, we have something for everyone. We host regular <strong>tournaments</strong>, <strong>community game nights</strong>, and exciting <strong>watch parties</strong> for major esports events.
+          </p>
+          <p><em><strong>Member Perks:</strong></em></p>
+          <ul class="member-perks-list">
+            <li>Access to exclusive events and tournaments</li>
+            <li>Networking opportunities with fellow gamers</li>
+            <li>Workshops and training sessions to improve your skills</li>
+            <li>Discounts on gaming gear and merchandise</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="../Pictures/WhatWeOffer.jpg" alt="What We Offer" class="responsive-img" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer>
+    <div class="container">
+
+      <!-- Social Media Icons -->
+      <div class="footer-socials">
+        <a href="https://discord.com" target="_blank" class="social-icon">
+          <img src="../Pictures/discordicon.svg" alt="Discord" />
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+          <img src="../Pictures/instagramicon.svg" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-icon">
+          <img src="../Pictures/youtubeicon.svg" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Footer Text -->
+    <div class="container">
+      <a class="footer-title">
+        <p>2025 NYP Esports</p>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================== Scripts ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="../JS/MobileNavbar.js"></script>
+  <script src="../JS/PageTransition.js"></script>
+
+</body>
+</html>

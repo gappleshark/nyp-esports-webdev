@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Us</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/join.css">
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      
+      <!-- Logo -->
+      <a class="logo" href="home.html">
+        <img id="CCA-Logo" src="../Pictures/CCA Logo.png" alt="CCA Logo">
+        <span class="Logo-Title">NYP Esports</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span id="menu-icon">&#9776;</span> 
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="teams.html">Teams</a>
+        <a href="join.html" class="current">Join Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="page-fade" class="fade">
+
+    <div class="Main_Structure">
+    
+        <form class="JoinClubForm_MAIN">
+             <!--=========================== Personal details =========================== -->
+            <h2>Join NYP Esports</h2>
+            <label class="Hint_ASK" for="name">Full Name</label>
+            <input class="User_Input" type="text" name="Full_Name" id="Full_Name" placeholder="Enter your full name" title="Name should only contain letters and spaces.">
+            <div id="Error_message FullName" class="Error_message"><p>Please enter a valid name. Name should only contain letters and spaces.</p></div>
+
+            <label class="Hint_ASK" for="email">Email Address</label>
+            <input class="User_Input" type="email" id="Email" name="Email" placeholder="Enter your email " title="Please enter a valid email: e.g. johndoe@mail.com">
+            <div id="Error_message Email" class="Error_message"><p>Please enter a valid email address.</p></div>
+
+            <label class="Hint_ASK" for="email">Phone Number</label>
+            <input class="User_Input" type="phone" id="PhoneNumber" name="PhoneNumber" placeholder="Enter your phone number" title="Phone number should be in the format: 88888888">
+            <div id="Error_message PhoneNumber" class="Error_message"><p>Please enter a valid 8-digit phone number.</p></div>
+            
+            <!--=========================== Academic Selector =========================== -->
+            <div class="Academic_Selector">
+                <label for="Academic">School</label>
+                <select id="Academic" name="Academic">
+                    <option value="Academic"></option>
+                    <option value="SBM">School of Business Management</option>
+                    <option value="SAS">School of Applied Science</option>
+                    <option value="SDM">School of Design & Media</option>
+                    <option value="SEG">School of Engineering</option>
+                    <option value="SHSS">School of Health & Social Sciences</option>
+                    <option value="SIT">School of Information Technology</option>
+                </select>
+                <div id="Error_message Academic" class="Error_message_Academic"><p>Please select school.</p></div>
+            </div>
+            
+            <!--=========================== SBM =========================== -->
+            <div class="Course_Selector" id="Course_SBM" style="display:none;">
+              <label for="Course">Course</label>
+              <select id="Course_SBM_Selector" name="Course">
+                <option value="Course1">Diploma in Business Management (C94)</option>
+                <option value="Course2">Diploma in Banking & Finance (C96)</option>
+                <option value="Course3">Diploma in Accountancy & Finance (C98)</option>
+                <option value="Course4">Diploma in Food & Beverage Business (C46)</option>
+                <option value="Course5">Diploma in Hospitality & Tourism Management (C67)</option>
+                <option value="Course6">Diploma in Media & Communication Management (C93)</option>
+                <option value="Course7">Diploma in Sport & Wellness Management (C81)</option>
+                <option value="Course8">Common Business & Technology Programme (C24)</option>
+                <option value="Course9">Common Business Programme (C34)</option>
+              </select>
+            </div>
+            <!--=========================== SAS =========================== -->
+            <div class="Course_Selector" id="Course_SAS" style="display:none;">
+              <label for="Course">Course</label>
+              <select id="Course_SAS_Selector" name="Course">
+                <option value="Course1">Common Science Programme (C27)</option>
+                <option value="Course2">Diploma in Biomedical Science with Analytics (C25)</option>
+                <option value="Course3">Diploma in Applied Chemistry (C45)</option>
+                <option value="Course4">Diploma in Biologics & Process Technology (C49)</option>
+                <option value="Course5">Diploma in Food Science & Nutrition (C69)</option>
+                <option value="Course6">Diploma in Pharmaceutical Science (C65)</option>
+                <option value="Course7">Diploma in Chemical & Pharmaceutical Technology (C73)</option>
+              </select>
+            </div>
+            
+            <!--=========================== SDM =========================== -->
+            <div class="Course_Selector" id="Course_SDM" style="display:none;">
+              <label for="Course">Course</label>
+              <select id="Course_SDM_Selector" name="Course">
+                <option value="Course1">Diploma in Animation, Games & Visual Effects (C29)</option>
+                <option value="Course2">Diploma in Architecture (C38)</option>
+                <option value="Course3">Diploma in Communication & Motion Design (C30)</option>
+                <option value="Course4">Diploma in Experiential Product & Interior Design (C32)</option>
+                <option value="Course5">Diploma in Game Development & Technology (C70)</option>
+                <option value="Course6">Common Design & Media Programme (C28)</option>
+              </select>
+            </div>
+            
+            <!--=========================== SOE =========================== -->
+            <div class="Course_Selector" id="Course_SEG" style="display:none;">
+              <label for="Course">Course</label>
+              <select id="Course_SEG_Selector" name="Course">
+                <option value="Course1">Common Engineering Programme (C42)</option>
+                <option value="Course2">Diploma in Advanced & Digital Manufacturing (C62)</option>
+                <option value="Course3">Diploma in Aerospace Engineering (C26)</option>
+                <option value="Course4">Diploma in AI & Data Engineering (C31)</option>
+                <option value="Course5">Diploma in Biomedical Engineering (C71)</option>
+                <option value="Course6">Diploma in Cloud Engineering (C75)</option>
+                <option value="Course7">Diploma in Electronic & Computer Engineering (C89)</option>
+                <option value="Course8">Diploma in Robotics & Mechatronics (C87)</option>
+                <option value="Course9">Diploma in Sustainability in Engineering with Business (C41)</option>
+              </select>
+            </div>
+
+            <!--=========================== HSS =========================== -->
+            <div class="Course_Selector" id="Course_SHSS" style="display:none;">
+              <label for="Course">Course</label>
+              <select id="Course_SHSS_Selector" name="Course">
+                <option value="Course1">Diploma in Nursing (C97)</option>
+                <option value="Course2">Diploma in Social Work (C47)</option>
+                <option value="Course3">Diploma in Psychology & Community Care (C52)</option>
+              </select>
+            </div>
+
+
+            <!--=========================== SIT =========================== -->
+            <div class="Course_Selector" id="Course_SIT" style="display:none;">
+                <label for="Course">Course</label>
+                <select id="Course_SIT_Selector" name="Course">
+                    <option value="Course1">Diploma in Applied AI & Analytics (C43)</option>
+                    <option value="Course2">Diploma in Business & Financial Technology (C35)</option>
+                    <option value="Course3">Common Business & Technology Programme (C24)</option>
+                    <option value="Course4">Common ICT Programme (C36)</option>
+                    <option value="Course5">Diploma in Cybersecurity & Digital Forensics (C54)</option>
+                    <option value="Course6">Diploma in Information Technology (C85)</option>
+                    
+                </select>
+            </div>
+
+            <!--=========================== Platform(s) =========================== -->
+            <div class="Checkbox_Selector">
+                <label>I play games on:</label>
+                <label><input type="checkbox" name="Platform" value="Mobile" > Mobile </label>
+                <label><input type="checkbox" name="Platform" value="PC"> PC </label>
+                <label><input type="checkbox" name="Platform" value="Console"> Console </label>
+            </div>
+            <div id="Error_message Platform" class="Error_message_CheckBox"><p>Please select at least one platform.</p></div>
+
+            <!--=========================== Competitive Interest =========================== -->
+            <div class="Competition_Interest">
+                <label>Are you interested in playing competitively?</label>
+                <label><input type="radio" name="Interest" value="Yes">&nbsp;Yes</label>
+                <label><input type="radio" name="Interest" value="No">&nbsp;No</label>
+            </div>
+            <div id="Error_message Interest" class="Error_message_Option"><p>Please select whether you're interested in playing competitively.</p></div>
+            
+        
+            <!--=========================== Mailing Interest =========================== -->
+            <div class="NewsCheck">
+                <label><input type="checkbox" name="NewsCheck" value="Yes"> I wish to receive occasional emails from NYP Esports, such as new release announcements.</label>
+            </div>
+
+            <!--=========================== Submit Button =========================== -->
+            <button type="button" id="Submit_Button" onclick="SubmitForm()">Join NYP Esports</button>
+  
+        </form>
+
+
+    </div>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer>
+    <div class="container">
+
+      <!-- Social Media Icons -->
+      <div class="footer-socials">
+        <a href="https://discord.com" target="_blank" class="social-icon">
+          <img src="../Pictures/discordicon.svg" alt="Discord" />
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+          <img src="../Pictures/instagramicon.svg" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-icon">
+          <img src="../Pictures/youtubeicon.svg" alt="YouTube" />
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Footer Text -->
+    <div class="container">
+      <a class="footer-title">
+        <p>2025 NYP Esports</p>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================== Scripts ===================== -->
+  <script src="../JS/MobileNavbar.js"></script>
+  <script src="../JS/PageTransition.js"></script>
+  <script src="../JS/SubmitForm.js"></script>
+  <script src="../JS/JoinAcademicFilter.js"></script>
+
+</body>
+</html>

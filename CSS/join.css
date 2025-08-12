@@ -1,0 +1,195 @@
+/* General Styles */
+body{
+    background: 
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(#040025, #000000);
+    background-size: auto, cover;
+}
+.Main_Structure {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.JoinClubForm_MAIN{
+    padding: 20px;
+    border-radius: 8px;
+    background:
+    url('https://www.transparenttextures.com/patterns/axiom-pattern.png') repeat,
+    linear-gradient(135deg, rgb(236, 232, 225), rgb(220, 215, 210));
+    background-size: auto, cover;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.148);
+}
+/* <!--=========================== Personal details =========================== --> */
+.Hint_ASK{
+    font-size: 22px;
+    display: block;
+    color: #000000;
+    font-weight: bold;
+}
+
+.JoinClubForm_MAIN h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.User_Input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+
+/* <!--=========================== Academic Selector =========================== -->   */
+.Academic_Selector{
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.Academic_Selector select{
+    width: auto;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 5px;
+    font-weight:bold;
+    font-style: italic;
+}
+/* <!--=========================== Course Selector =========================== --> */
+.Course_Selector{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.Course_Selector select{
+    width: auto;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 5px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+/* <!--=========================== Checkbox =========================== --> */
+
+.Checkbox_Selector{
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.Checkbox_Selector label {
+    display: block;
+    font-size: 20px;
+    margin-top: 3px;
+    color: #000000;
+    font-weight:bold;
+   
+}
+.Competition_Interest{
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+.Competition_Interest label{
+    display: flex;
+    
+}
+
+.NewsCheck {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* <!--=========================== Submit Button =========================== --> */
+#Submit_Button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(2, 154, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+#Submit_Button.loading {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+#Submit_Button:hover {
+    background-color: rgb(0, 108, 180);
+
+}
+
+
+/* <!--=========================== Error Message =========================== --> */
+.Error_message{
+    margin-top: -30px;
+    position: absolute;
+    display:none;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.Error_message_Academic{
+    margin-bottom: -10px;
+    display:none;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.Error_message_CheckBox{
+    margin-top: -75px;
+    margin-left: 200px;
+    position: absolute;
+    display:none;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.Error_message_Option{
+    margin-top: -50px;
+    margin-left: 200px;
+    position: absolute;
+    display:none;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* <!--=========================== Resposnive School and Course Selectors =========================== --> */
+@media (max-width: 768px) {
+  .Academic_Selector select,
+  .Course_Selector select {
+    width: 100%; /* Full width on mobile */
+    font-size: 14px;
+  }
+
+}
+
+
